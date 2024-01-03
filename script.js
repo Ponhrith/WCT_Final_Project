@@ -41,18 +41,25 @@ firebase.initializeApp({
   reportbutton = document.getElementById('reportButton');
   
   firebase.auth().onAuthStateChanged(user => {
+// Function to update the login icon based on the login status
+function updateLoginIcon() {
   const iconElement = document.getElementById('myIcon');
   const linkElement = document.getElementById('myLink');
-  if (user) {
+
+  if (isLoggedIn) {
+    // Change the icon and link for logged-in users
     iconElement.className = 'bi bi-person-fill';
     linkElement.href = 'profile/profile.html';
-    isLoggedIn = true;
   } else {
-      // Revert to the original icon and link for not logged-in users
+    // Revert to the original icon and set the redirect URL for not logged-in users
     iconElement.className = 'fa-solid fa-right-to-bracket';
-    linkElement.href = 'https://ponhrith.github.io/WCT_Final_Project/auth/LogIn.html';
+    linkElement.removeAttribute('onclick'); // Remove any existing onclick attribute
+    linkElement.onclick = function() {
+      window.location.assign('https://ponhrith.github.io/WCT_Final_Project/auth/LogIn.html');
+    };
   }
-});
+}
+
 
   function filterReports() {
     const filterSelect = document.getElementById('filterSelect');
