@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Firebase scripts and your custom script -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+   
+</head>
+<body>
+    <header>
+        <img src="/logo.png" class="logo">
+        <h2 class="logoName">URMS</h2>
+        <nav class="navigator">
+            <a href="/Main/Main.html"><i class="fa-solid fa-house" id="here"></i></a>
+            <a href="/About/About.html"><i class="fa-regular fa-flag"></i></a>
+            <a id="myLink" href="/log&register/LogIn.html"><i id="myIcon" class="fa-solid fa-right-to-bracket"></i></a>
+        </nav>            
+    </header> 
+    <header class="ask">What <span style="color: yellow;"> &nbsp;happened?</span></header>
+
+    <!--all report-->
+    <div class="container">
+        <div class="btn-container">  
+            <button id="reportButton" onclick="CanReport()">Report</button>
+            <select id="filterSelect" onchange="filterReports()">
+                <option value="filter button">Filter Button</option>
+                <option value="all">All</option>
+                <option value="year">By Year</option>
+                <option value="month">By Month</option>
+                <option value="fixed">Fixed</option>
+                <option value="fixing">Fixing</option>
+            </select>
+        </div>
+        
+        <h1 class="report-list"><i class="bi bi-calendar3-event"></i>&nbsp;&nbsp;&nbsp;&nbsp;Report Today :</h1>
+        <ul id="report-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

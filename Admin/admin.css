@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #808080;
+    box-sizing: border-box;
+    font-family:   'Poppins',  sans-serif;
+    background-color: #283747;
+}
+
+.admin {
+    width: 179px;
+    height: 53px;
+    color: #666;
+    font-family: Tiro Devanagari Sanskrit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 51px;
+    margin-top: 37px;
+}
+
+.report-list {
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 51px;
+}
+
+
+
+.report-item {
+    margin-top: 52px;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    border: 10px solid #283747;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: fit-content;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+.report-image {
+    width: 200px;
+    height: 200px; 
+    border-radius: 20px;
+    fill: #808080;
+    object-fit: cover;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.report-image:hover { 
+    transform: scale(1.1);
+  }
+
+.report-content {
+    flex: 1;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.report-building,
+.report-floor,
+.report-room,
+.report-detail,
+.report-date,
+.report-author,
+.report-anonymous {
+    color: #808080;
+    font-family: Tiro Devanagari Sanskrit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px; /* Adjust as needed */
+    padding: 10px;
+}
+
+.report-building,
+.report-floor,
+.report-room {
+    display: inline-block;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.report-detail,
+.report-date {
+    font-size: 16px; /* Adjust as needed */
+}
+
+.report-date {
+    margin-left: 250px;
+}
+
+.report-author,
+.report-anonymous {
+    color: #FFF;
+    font-style: italic;
+    
+}
+
+.report-list {
+margin-left: 86px;
+margin-top: 37px;
+color: #666;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* deltete button and other button*/
+
+.delete-button,
+.check-button,
+.fixing-button,
+.fixed-button {
+    width: 39px;
+    height: 39px;
+    background: none;
+    border: none;
+    color: #808080; /* Set the initial text color */
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    border: 1px ;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.delete-button:hover,
+.check-button:hover,
+.fixing-button:hover,
+.fixed-button:hover {
+    transform: scale(2);
+
+}
+.delete-button i:hover,
+.check-button i:hover,
+.fixing-button i:hover,
+.fixed-button i:hover {
+    color: yellow; /* Set the text color on hover */
+}
+
+.report-status {
+   text-align: center;
+    color: yellow;
+}
+@media (max-width: 1200px) {
+
+    .buttton-container{
+        display: flex;
+        margin-left: 600px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .report-date, .report-status{
+        margin: 0;
+    }
+
+    .report-item {
+        margin-left: 0;
+        display: flex;
+        width: auto;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .report-image {
+       width: 250px;
+       height: 250px;
+    }
+
+    .buttton-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .report-status {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .admin, .report-list{
+        margin-left: 1em;
+    }
+
+   .report-item {
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);;
+   }
+          
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #808080;
+    box-sizing: border-box;
+    font-family:   'Poppins',  sans-serif;
+    background-color: #283747;
+}
+
+.logoName{
+    position: absolute;
+    left: 75px;
+ }
+
+i {
+    display: inline-block;
+    color: #666;
+    font-size: 15px #808080;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    border: 1px solid #283747;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+i:hover {
+    color: #FF0;
+    transform: scale(2.1);
+}
+
+.ask {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 0%;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+
+a {
+    margin-right: 20px;
+}
+/* button post part */
+button {
+    border-radius: 30px;
+    background: #FF0;
+    display: inline-flex;
+    padding: 18px 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #283747;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+/* this part */
+button:hover {
+    transform: scale(1.1);
+}
+
+
+/* reporting part*/
+
+.reporting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+label {
+    border: 10px;
+    margin-left: 15px;
+    width: 100px;
+}
+
+.date-input {
+    margin-left: 15px;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 30px;
+    height: 2em;
+    width: 150px;
+    color: #FF0;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    
+}
+ 
+.reporting .card, .date-container{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  color: #666;
+  
+}
+
+select {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-top: 30px;
+    height: 60px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+select::after {
+    color: #FF0;
+}
+
+select:hover, .date-input:hover {
+    transform: scale(1.1);
+    color: #FF0;
+}
+
+.addimage , .image-display{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
+.input-box {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.input-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+
+
+/* toggle button */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+.toggle-btn {
+    margin-top: 0px;
+    margin-left: 80px;
+    display: inline-block;
+    width: 61px;
+    height: 31px;
+    background-color: #666;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 23px;
+    height: 23px;
+    background-color: #666;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .toggle-btn {
+    background-color: yellow; /* Green when toggled on */
+}
+input[type="checkbox"]:checked + .toggle-btn .toggle-slider {
+    transform: translateX(30px);
+    background-color: #ffff00; /* Dark green when toggled on */
+}
+
+/* hide name */
+.hidename {
+    margin-left: 22px;
+    margin-top: 2em;
+}
+
+.function {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0px;
+    }
+
+    .logo {
+        max-width: 50px; 
+    }
+
+    .logoName {
+        font-size: small;
+        margin-left: -32px;
+    } 
+
+    select, .date-container, .addimage, .function, .input-box, button, .ask {
+        margin-left: -45px;
+        font-size: 15px;
+    }
+
+    .ask {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    </head>
+    <body>
+        <header>
+           <img src="/logo.png"class="logo"><h2 class="logoName">URMS</h2>
+            <nav class="navigator">
+                <a href="/Main/Main.html"><i class="fa-solid fa-house"></i></a>
+                <a href="/About/About.html"><i class="fa-regular fa-flag"></i></a>
+                <a href="#"><i class="bi bi-person-fill" id="here"></i></a>
+            </nav>            
+        </header> 
+
+        <div id="profile-container">
+            <label>
+                <img id="profile-image" src="/profile logo.png" alt=>
+            </label>
+            <input type="file" id="file-input" accept="image/*" onchange="displayImage(this)">
+            <div class="username" id="username">Welcome</div>
+                <!--Report History-->
+                <h1 class="report-list"><i class="bi bi-calendar3-event"></i>&nbsp;&nbsp;&nbsp; &nbsp;Report History :</h1>
+                
+                <ul id="report-list"></ul> 
+                <div class="btn-container">
+            <button id="Logout" onclick="logout()">Logout</button>
+        </div>
+        </div>
+        
+     <script src="profile.js"></script>
+    </body>
+  
+</html>
+       

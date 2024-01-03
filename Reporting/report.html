@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/logo.png" class="logo"><h2 class="logoName">URMS</h2>
+        <nav class="navigator">
+            <a href="/Main/Main.html"><i class="fas fa-house"></i></a>
+            <a href="/About/About.html"><i class="far fa-flag"></i></a>
+            <a id="myLink" href="/profile/profile.html"><i class="bi bi-person-fill"></i></a>
+
+        </nav>  
+    </header>
+    <header class="ask"><span style="color: yellow;">Re</span>porting</header>  
+          
+
+    <!-- Reporting section -->
+    <section class="reporting">
+        <div class="date-container">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" class="date-input">
+        </div>
+        
+        <form class="card">
+            <select id="building" onchange="updateRoom()">
+                <option value="">Building</option>
+                <option value="1">building A</option>
+                <option value="2">building B</option>
+                <option value="3">building C</option>
+                <option value="4">building D</option>
+                <option value="5">Stem building</option>
+            </select>
+        </form>
+        
+        <!-- Create the first dropdown menu for floors --> 
+        <form class="card">
+            <select id="floor" onchange="updateRoom()">
+                <option value="">Floor</option>
+                <option value="1">Floor 1</option>
+                <option value="2">Floor 2</option>
+                <option value="3">Floor 3</option>
+            </select>
+        </form>
+
+        <form class="card">
+            <select id="room">
+                <option value="">Room</option>
+            </select>
+        </form>
+
+        <!-- Create the second dropdown menu for rooms -->
+        <section class="addimage">
+            <form>
+                <label for="image">Image:</label>
+                <input type="file" id="image" accept="image/*" required>
+            </form>
+        </section>
+
+        <!--status-->
+        
+        <section class="function">
+            <div class="hidename"><i class="bi bi-eye-slash-fill"></i> &nbsp; &nbsp;Hide Name :</div>
+            <div class="toggle-container">
+                <label class="toggle-btn">
+                    <input type="checkbox" onchange="toggleSlider()">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="input-box">
+            <form  id="dataForm">
+                <textarea rows="1" id="detail" placeholder="Write more details..."></textarea>
+            </form>
+        </section>
+        <form action="#">
+        <button type="button" onclick="storeData()">Post</button>
+    </form>
+    
+    </section>
+    
+    <script src="report.js"></script>
+</body>
+</html>
