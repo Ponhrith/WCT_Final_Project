@@ -26,7 +26,7 @@ if (user) {
 } else {
     // Revert to the original icon and link for not logged-in users
   iconElement.className = 'fa-solid fa-right-to-bracket';
-  linkElement.href = '../LogIn.html';
+  linkElement.href = '../auth/LogIn.html';
 }
 });
 
