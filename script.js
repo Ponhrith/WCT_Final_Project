@@ -9,11 +9,11 @@ function updateLoginIcon() {
   if (isLoggedIn) {
     // Change the icon and link for logged-in users
     iconElement.className = 'bi bi-person-fill';
-    linkElement.href = '/profile/profile.html';
+    linkElement.href = 'profile/profile.html';
   } else {
     // Revert to the original icon and link for not logged-in users
     iconElement.className = 'fa-solid fa-right-to-bracket';
-    linkElement.href = '/log&register/LogIn.html';
+    linkElement.href = 'auth/LogIn.html';
   }
 }
 
@@ -45,12 +45,12 @@ firebase.initializeApp({
   const linkElement = document.getElementById('myLink');
   if (user) {
     iconElement.className = 'bi bi-person-fill';
-    linkElement.href = '/profile/profile.html';
+    linkElement.href = 'profile/profile.html';
     isLoggedIn = true;
   } else {
       // Revert to the original icon and link for not logged-in users
     iconElement.className = 'fa-solid fa-right-to-bracket';
-    linkElement.href = '/log&register/LogIn.html';
+    linkElement.href = 'auth/LogIn.html';
   }
 });
 
