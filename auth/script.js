@@ -127,7 +127,7 @@ const firebaseConfig = {
           window.location.href = "/Admin/admin.html";
         } else {
           // Redirect to profile page
-          window.location.href = "/profile/profile.html";
+          window.location.href = "/WCT_Final_Project/";
         }
        
         // Call the function to update the login icon after a successful login
