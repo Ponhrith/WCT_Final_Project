@@ -50,7 +50,7 @@ firebase.initializeApp({
   } else {
       // Revert to the original icon and link for not logged-in users
     iconElement.className = 'fa-solid fa-right-to-bracket';
-    linkElement.href = 'auth/LogIn.html';
+    linkElement.href = 'Auth/LogIn.html';
   }
 });
 
