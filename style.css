@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+    padding: 0;
+    color: #808080;
+    box-sizing: border-box;
+    font-family:   'Poppins',  sans-serif;
+    background-color: #283747;
+}
+
+.report-list {
+  margin-left: 10em;
+}
+.logoName{
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  left: 75px;
+  top: 25px;
+  color: #666;
+}
+
+/* add more */
+i {
+  color: #666;
+  font-size: 15px #808080;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  border: 1px solid #283747;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+i:hover {
+  color: #FF0;
+  transform: scale(2.1);
+}
+
+
+#here {
+  color: #FF0;
+  margin-right: 10px;
+}
+
+.ask {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 0%;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+
+
+.top {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: yellow;
+}
+
+
+.logo {
+  max-width: 100px;
+}
+
+a 
+{
+  margin-left: 28px;
+}
+
+.login {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+}
+
+#check {
+  display: none;
+}
+
+.container .form {
+  padding: 2rem;
+  margin-top: 1em;
+}
+
+.form header {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form input {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  color: #666;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.form input:hover {
+  transform: scale(1.1);
+}
+
+
+.form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  color: yellow;
+}
+
+.form a {
+  font-size: 16px;
+  color: yellow;
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form input.button {
+  color: #fff;
+  background: #283747;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form input.button:hover {
+  background: yellow;
+  color:#283747;
+}
+
+.signup {
+  margin: 3em, 0, 0, 2em;
+  font-size: 17px;
+  text-align: center;
+  color: #666;
+}
+
+.signup label {
+  color: yellow;
+  cursor: pointer;
+}
+
+.signup label:hover {
+  text-decoration: underline;
+}
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 450px;
+  width: 100%;
+  background: #283747; 
+  border-radius: 7px;
+}
+
+button {
+      background-color: transparent;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: none;
+      color: white;
+      transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+button:hover{
+  color: #FF0;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust the width for smaller screens */
+    max-width: 100%; /* Set the maximum width to 300px */
+    left: 50%; /* Keep it centered */
+    transform: translate(-30%, 30);
+  }
+
+  .form {
+    padding: 1rem;
+  }
+  
+  .top {
+    font-size: 25px; 
+  }
+
+  .logo {
+    max-width: 50px; 
+}
+
+.logoName {
+    font-size: small;
+    margin-left: -34px;
+    margin-top: -1em;
+}
+
+.container {
+  top: 12%;
+}
+
+}
