@@ -130,7 +130,8 @@ const firebaseConfig = {
           window.location.href = "/WCT_Final_Project/";
         }
        
-        // Call the function to update the login icon after a successful login
+
+        // Call the function to update the login icon after a successful login for both admin and normal users
      
 
         alert(' Logged in success!!');
