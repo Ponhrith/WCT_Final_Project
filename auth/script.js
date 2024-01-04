@@ -127,7 +127,7 @@ const firebaseConfig = {
           window.location.href = "/Admin/admin.html";
         } else {
           // Redirect to profile page
-          window.location.href = "/WCT_Final_Project/";
+          window.location.href = "/WCT_Final_Project/About/About.html";
         }
        
 
