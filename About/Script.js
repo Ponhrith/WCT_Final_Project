@@ -22,7 +22,7 @@ const iconElement = document.getElementById('myIcon');
 const linkElement = document.getElementById('myLink');
 if (user) {
   iconElement.className = 'bi bi-person-fill';
-  linkElement.href = '/profile/profile.html';
+  linkElement.href = '/WCT_Final_Project/profile/profile.html';
 } else {
     // Revert to the original icon and link for not logged-in users
   iconElement.className = 'fa-solid fa-right-to-bracket';
