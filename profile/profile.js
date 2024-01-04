@@ -18,7 +18,7 @@ firebase.initializeApp({
     .then(() => {
         // Sign-out successful.
         console.log('User logged out successfully');
-        window.location.href = "/Main/Main.html";
+        window.location.href = "/WCT_Final_Project/";
     })
     .catch((error) => {
         // An error happened.
