@@ -151,7 +151,7 @@ firebase.initializeApp({
 
   function CanReport() {
     if (isLoggedIn) {
-      window.location.href = '/Reporting/report.html';
+      window.location.href = '/WCT_Final_Project/Reporting/report.html';
     } else {
       alert("You have to login first !!!");
     }
