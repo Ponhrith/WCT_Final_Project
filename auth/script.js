@@ -124,7 +124,7 @@ const firebaseConfig = {
         // Check if the email and password match the admin credentials
         if (email.toLowerCase() === 'adminrupp@gmail.com' && password === 'adminpass') {
           // Redirect to admin page
-          window.location.href = "/Admin/admin.html";
+          window.location.href = "/WCT_Final_Project//Admin/admin.html";
         } else {
           // Redirect to profile page
           window.location.href = "/WCT_Final_Project/About/About.html";
