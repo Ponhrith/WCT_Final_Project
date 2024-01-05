@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     color: #808080;
     box-sizing: border-box;
-    font-family:   'Poppins',  sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #283747;
 }
+
 .report-list {
     margin-left: 10em;
 }
-.logoName{
-   position: absolute;
-   left: 75px;
-   color: rgb(128, 128, 128);
+
+.logoName {
+    position: absolute;
+    left: 75px;
+    color: rgb(128, 128, 128);
 }
 
-/* add more */
 i {
     display: inline-block;
     color: #666;
-    font-size: 15px #808080;
+    font-size: 15px;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
     border: 1px solid #283747;
     border-radius: 100px;
@@ -32,7 +34,6 @@ i:hover {
     transform: scale(2.1);
 }
 
-
 #here {
     color: #FF0;
 }
@@ -43,7 +44,6 @@ i:hover {
     font-weight: bold;
     font-size: 35px;
     margin-top: 0%;
-
 }
 
 header {
@@ -54,21 +54,20 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+    max-width: 100px;
 }
-
 
 a {
     margin-right: 20px;
 }
 
-/* report container */
-
 .btn-container {
     display: flex;
     justify-content: space-between;
 }
-#reportButton, #filterSelect {
+
+#reportButton,
+#filterSelect {
     border-radius: 30px;
     background: #FF0;
     display: inline-flex;
@@ -88,8 +87,6 @@ a {
 }
 
 #filterSelect {
-    border-radius: 30px;
-    background: #FF0;
     padding: 18px 26px;
     font-family: Roboto;
     font-size: 24px;
@@ -101,26 +98,19 @@ a {
     cursor: pointer;
 }
 
-#filterSelect:hover {
-    transform: scale(1.1);
-}
-
-/* this part */
+#filterSelect:hover,
 button:hover {
     transform: scale(1.1);
-    color: #FFF;
 }
-
 
 #report-list {
     list-style: none;
     padding: 0;
 }
 
-
-.report-image:hover { 
+.report-image:hover {
     transform: scale(1.1);
-  }
+}
 
 .report-item {
     display: flex;
@@ -143,15 +133,14 @@ button:hover {
 .report-image {
     border-radius: 20px;
     width: 141px;
-    height: 113px; /* Adjust the height as needed */
-    fill: #808080;
+    height: 113px;
     object-fit: cover;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .report-content {
     flex: 1;
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 20px;
 }
 
 .report-building,
@@ -166,19 +155,19 @@ button:hover {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 5px; /* Adjust as needed */
+    margin-bottom: 5px;
 }
 
 .report-building,
 .report-floor,
 .report-room {
     display: inline-block;
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 20px;
 }
 
 .report-detail,
 .report-date {
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px;
 }
 
 .report-date {
@@ -192,39 +181,39 @@ button:hover {
 }
 
 .report-list {
-margin-top: 37px;
-color: #666;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    margin-top: 37px;
+    color: #666;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.report-status, .report-building, .report-floor, .report-anonymous, .report-date,.report-author, .report-room{
+.report-status,
+.report-building,
+.report-floor,
+.report-anonymous,
+.report-date,
+.report-author,
+.report-room {
     margin-top: 1em;
 }
-
 
 .report-status {
     margin-left: 500px;
     color: yellow;
 }
 
-
-
 @media (max-width: 1200px) {
- 
-    #reportButton, #filterSelect{
+    #reportButton,
+    #filterSelect {
         margin-right: 1%;
         margin-left: 1%;
     }
-    
 
     .report-item {
         margin-left: 5%;
         margin-right: 5%;
-       
     }
 
     .report-date {
@@ -239,24 +228,27 @@ line-height: normal;
 
     .report-list {
         margin-left: 10px;
-        margin-top: 20px; /* Adjust as needed */
+        margin-top: 20px;
     }
 
-    .report-status, .report-building, .report-floor, .report-anonymous, .report-date, .report-detail, .report-room {
+    .report-status,
+    .report-building,
+    .report-floor,
+    .report-anonymous,
+    .report-date,
+    .report-detail,
+    .report-room {
         margin-top: 1em;
     }
-
-
-
 }
-
 
 @media (max-width: 768px) {
     main {
         padding: 10px;
     }
 
-    #reportButton, #filterSelect{
+    #reportButton,
+    #filterSelect {
         margin-right: 1%;
         margin-left: 1%;
     }
@@ -279,7 +271,7 @@ line-height: normal;
     }
 
     .logo {
-        max-width: 50px; 
+        max-width: 50px;
     }
 
     .logoName {
@@ -287,7 +279,8 @@ line-height: normal;
         margin-left: -34px;
     }
 
-    #reportButton, #filterSelect {
+    #reportButton,
+    #filterSelect {
         border-radius: 30px;
         background: #FF0;
         display: inline-flex;
@@ -297,16 +290,20 @@ line-height: normal;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        
     }
 
     .ask {
         margin-top: 2em;
     }
 
-    .report-status, .report-building, .report-floor, .report-anonymous,.report-author, .report-date, .report-detail, .report-room {
+    .report-status,
+    .report-building,
+    .report-floor,
+    .report-anonymous,
+    .report-author,
+    .report-date,
+    .report-detail,
+    .report-room {
         margin-top: 1em;
     }
-
 }
-
