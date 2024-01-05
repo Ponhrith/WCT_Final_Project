@@ -325,4 +325,67 @@ line-height: normal;
     }
 }
 
+@media (max-width: 992px) {
+    #reportButton, #filterSelect {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .report-item {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .report-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo {
+        max-width: 50px; 
+    }
+
+    .logoName {
+        font-size: small;
+        margin-left: -34px;
+    }
+
+    #reportButton, #filterSelect {
+        padding: 9px 13px;
+    }
+
+    .ask {
+        margin-top: 2em;
+    }
+
+    .report-status, .report-building, .report-floor, .report-anonymous,.report-author, .report-date, .report-detail, .report-room {
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 993px) {
+    #reportButton, #filterSelect {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .report-item {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .report-date {
+        margin-left: 570px;
+    }
+
+    .report-status, .report-building, .report-floor, .report-anonymous, .report-date, .report-detail, .report-room {
+        margin-top: 2em;
+    }
+
+    .report-list {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}
+
 
