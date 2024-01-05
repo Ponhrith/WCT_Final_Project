@@ -116,8 +116,12 @@ function storeData() {
   const detail = document.getElementById('detail').value;
   const date = document.getElementById('date').value;
   const imageInput = document.getElementById('image');
-  
- 
+
+  if (building === '' || status === '' || floor === '' || room === '' || detail === '' || date === '') {
+    alert('Please fill in all fields.');
+    return;
+  }
+
   // Ensure an image is selected
   if (!imageInput.files[0]) {
     alert('Please select an image.');
