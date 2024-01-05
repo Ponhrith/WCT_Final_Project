@@ -295,3 +295,34 @@ line-height: normal;
 
 }
 
+@media (min-width: 1201px) {
+    #reportButton, #filterSelect {
+        /* Adjust styles for larger screens */
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .report-item {
+        /* Adjust styles for larger screens */
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .report-date {
+        /* Adjust styles for larger screens */
+        margin-left: 570px;
+    }
+
+    .report-status, .report-building, .report-floor, .report-anonymous, .report-date, .report-detail, .report-room {
+        /* Adjust styles for larger screens */
+        margin-top: 2em;
+    }
+
+    .report-list {
+        /* Adjust styles for larger screens */
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}
+
+
